@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\title{Homework 3.1}
+\author{LeeJX}
+\begin{document}
+\maketitle
+
+\begin{enumerate}[\textbf{3.1}-1]
+\item 
+\par the key is to prove that $c_1(f(n)+g(n))\leq max(f(n),g(n)) \leq c_2(f(n)+g(n))$ for all $n>n_0$
+\par first step: if $max(f(n),g(n))=f(n)$, then $g(n)\leq f(n)$
+\par let $c_1=1/2$, then $1/2f(n)+1/2g(n)\leq f(n)$
+\par next: let $c_2=1$, then $f(n)\leq f(n)+g(n)$
+\par finish
+\item
+\par the key is to prove that $c_1(n^b)\leq (n+a)^b \leq c_2(n^b)$ for all $n>n_0$
+\par note: processing is to prove the inequality is correct when $n>n_0$ not for any real integer $n$
+\par$
+\begin{aligned}
+n+a & \geq n-|a| 
+\\ &\geq 1/2n, \quad when\quad |a| \leq 1/2n
+\end{aligned}$
+\par and
+\par$
+\begin{aligned}
+n+a & \leq n+|a|\\
+& \leq 3/2n, \quad when \quad|a| \leq 1/2n
+\end{aligned}
+$
+\par so,
+\par$1/2n<n+a<3/2n,\quad when \quad|a| \leq 1/2n$
+\par because $b>0$, 
+\par $(1/2)^bn^b<(n+a)^b<(3/2)^bn^b$
+\par let $c_1=1/2,c_2=3/2$, finish
+\item
+\par The best running time not always occurs, and we want to know the average running time and the worst time, these are more important.
+\item
+\par $2^{n+1}=2*2^n=O(2^n)$
+\par $2^{2n}=4^n=O(4^n)$
+\item
+\par use the definition
+
+\end{enumerate}
+\end{document}

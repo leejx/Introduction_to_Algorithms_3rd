@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{bm}
+\title{Homework 2.2}
+\author{LeeJX}
+\begin{document}
+\maketitle
+
+\begin{enumerate}[\textbf{2.2}-1]
+\item O($n^3$)
+\item selection sort pseudocode
+\par \# the last one in array A doesn't need to compare
+\par for i=1 to A.length-1
+\par \quad min = A[i]
+\par \# here the last one in array A should be take into consideration
+\par \quad for j=i+1 to A.length
+\par \quad \quad if min $>$ A[j]
+\par \quad \quad min = A[j]
+\par \quad \quad k = j
+\par \quad \quad j++
+\par \quad A[k] = A[i]
+\par \quad A[i] = min
+\par \quad i++
+\par The best and worst case running times are both O($n^2$), for the for loop to search the minimal element is essential for every time.
+\item In some certain condition
+\end{enumerate}
+\end{document}

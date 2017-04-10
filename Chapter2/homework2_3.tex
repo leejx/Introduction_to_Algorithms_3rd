@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{enumerate}
+
+\title{Homework 2.3}
+\author{LeeJX}
+\begin{document}
+\maketitle
+
+\begin{enumerate}[\textbf{2.3}-4]
+\item 
+\par Divide: This step divide the array into two parts: T(n-1) and 1. So D(n)=$O(1)$
+\par Conquer: T(n-1)+1
+\par Combine: For n-element, there are n-1 levels, so C(n)=$O(n-1)$
+\end{enumerate}
+\begin{enumerate}[\textbf{2.3}-7]
+\item 
+\par Use the merge sort algorithm to sort the integers in set S, which costs $O(nlgn)$, then find the $x/2$ using the binary search algorithm, this will cost $O(lgn)$, and last, for each integer $k$ from $x/2$ to x in set S, search weather there is an integer $m$, which satisfies $m=x-k$ using binary search, this will cost $O((x/2)lg(x/2))$. The total cost is $O(nlgn)$
+\end{enumerate}
+\end{document}
