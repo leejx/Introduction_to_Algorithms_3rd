@@ -10,7 +10,18 @@
 \item 
 \par the maximum of the sum of negative elements
 \item Brute\_Force(A, low, high)
-\par sum[n][n]= $- \infty$
-\par sf
+\par sum[n][n] = 0
+\par max = $-\infty$
+\par low = 0, high = 0
+\par for i=1 upto n
+\par \quad for j=i upto n
+\par \quad \quad sum[i][j] = sum[i][j-1]+A[j]
+\par for i=1 upto n
+\par \quad for j=i upto n
+\par \quad \quad if sum[i][j] > max
+\par \quad \quad \quad max=sum[i][j]
+\par \quad \quad \quad low = i
+\par \quad \quad \quad high = j
+\item 
 \end{enumerate}
 \end{document}

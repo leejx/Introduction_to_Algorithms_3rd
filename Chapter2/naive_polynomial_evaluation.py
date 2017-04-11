@@ -19,10 +19,10 @@ def polynomial_evaluation(a,x):
         _sum = _sum + int(a[i]) * x_i
         last_x_i = x_i
     return _sum
-
-def main():
-    print polynomial_evaluation('1 5 3 2',2)
-
-
-if __name__ == '__main__' :
-    main()
+#
+# def main():
+#     print polynomial_evaluation('1 5 3 2',2)
+#
+# 
+# if __name__ == '__main__' :
+#     doctest.testmod(verbose=True)
